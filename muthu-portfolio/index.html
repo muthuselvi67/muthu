@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Muthuselvi S — Web Developer & AI/ML Enthusiast based in Coimbatore, India." />
+    <meta name="author" content="Muthuselvi S" />
+    <title>Muthuselvi S — Web Developer & AI Enthusiast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <!-- GLOBAL BG CANVAS: ambient gradient blobs -->
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="bg-blob bb-1"></div>
+        <div class="bg-blob bb-2"></div>
+        <div class="bg-blob bb-3"></div>
+        <div class="bg-blob bb-4"></div>
+        <div class="bg-blob bb-5"></div>
+    </div>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#about" class="mob-link">About</a>
+        <a href="#stack" class="mob-link">Stack</a>
+        <a href="#projects" class="mob-link">Projects</a>
+        <a href="#contact" class="mob-link">Contact</a>
+        <a href="#contact" class="mob-cta">Hire Me</a>
+    </div>
+
+    <!-- NAV -->
+    <nav id="nav">
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+
+        <!-- Crown Ornament -->
+        <div class="hero-crown">
+            <span class="hero-crown-symbol">♛</span>
+            <div class="hero-crown-rule">
+                <span></span>
+                <em>Portfolio</em>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Hero Grid: Left | Divider | Right -->
+        <div class="hero-inner">
+
+            <!-- LEFT: Text -->
+            <div class="hero-left">
+                <p class="hero-eyebrow">Web Developer &amp; AI Enthusiast</p>
+                <h1 class="hero-title">
+                    Crafting<br />
+                    <span class="grad-text">Royal</span> &amp; <em>Bold</em><br />
+                    Web Experiences
+                </h1>
+                <p class="hero-sub">Building purposeful digital products where clean code meets precise design and
+                    intelligent systems — all crafted with passion from Coimbatore.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">
+                        View Projects
+                        <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
+                            <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <div class="hero-stat-num">5+</div>
+                        <div class="hero-stat-label">Projects Built</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-num">3+</div>
+                        <div class="hero-stat-label">Tech Domains</div>
+                    </div>
+                    <div>
+                        <div class="hero-stat-num">BCA</div>
+                        <div class="hero-stat-label">Graduate</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CENTER: Vertical Divider -->
+            <div class="hero-divider">
+                <div class="hero-divider-line"></div>
+                <div class="hero-divider-icon">✦</div>
+                <div class="hero-divider-line"></div>
+            </div>
+
+            <!-- RIGHT: Profile Card -->
+            <div class="hero-visual" id="heroVisual">
+                <div class="hero-ring"></div>
+                <div class="hero-ring-2"></div>
+
+                <!-- Card -->
+                <div class="hero-card" id="heroCard">
+                    <!-- Animated rotating border -->
+                    <div class="hero-card-border"></div>
+
+                    <!-- Ribbon top -->
+                    <div class="hero-card-ribbon">
+                        <span class="hero-card-ribbon-dots"></span>
+                    </div>
+
+                    <!-- Avatar (half-overlaps ribbon) -->
+                    <div class="hero-avatar-wrap">
+                        <div class="hero-avatar-ring"></div>
+                        <div class="hero-avatar-ring-inner"></div>
+                        <img class="hero-avatar" src="mypics.jpeg" alt="no img" srcset="">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="hero-card-body">
+                        <div class="hero-card-name">Muthuselvi S</div>
+                        <div class="hero-card-role">Web Dev · AI Enthusiast</div>
+
+                        <div class="hero-card-line"></div>
+
+                        <!-- Skill mini-bars -->
+                        <div class="hero-skills">
+                            <div class="hero-skill-row">
+                                <span class="hero-skill-label">React</span>
+                                <div class="hero-skill-track">
+                                    <div class="hero-skill-bar" data-w="82"></div>
+                                </div>
+                                <span class="hero-skill-pct">82%</span>
+                            </div>
+                            <div class="hero-skill-row">
+                                <span class="hero-skill-label">Python</span>
+                                <div class="hero-skill-track">
+                                    <div class="hero-skill-bar" data-w="88"></div>
+                                </div>
+                                <span class="hero-skill-pct">88%</span>
+                            </div>
+                            <div class="hero-skill-row">
+                                <span class="hero-skill-label">AI/ML</span>
+                                <div class="hero-skill-track">
+                                    <div class="hero-skill-bar" data-w="75"></div>
+                                </div>
+                                <span class="hero-skill-pct">75%</span>
+                            </div>
+                        </div>
+
+                        <!-- Tech badges -->
+                        <div class="hero-card-badges">
+                            <span class="hbadge">Python</span>
+                            <span class="hbadge">React</span>
+                            <span class="hbadge">ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating chips -->
+                <div class="hero-chip chip-1">🏆 BCA Graduate</div>
+                <div class="hero-chip chip-2">📍 Coimbatore</div>
+                <div class="hero-chip chip-3">⚡ Fast Learner</div>
+                <div class="hero-chip chip-4">🤖 AI &amp; ML</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-label reveal">About Me</div>
+                    <h2 class="section-title reveal d1">Motivated by craft,<br />driven by results.</h2>
+                    <p class="reveal d2">Hi, I'm <strong>Muthuselvi S</strong> — a BCA graduate from PSGR Krishnammal
+                        College for Women, Coimbatore. I combine technical precision with a genuine love for building
+                        things that work beautifully.</p>
+                    <p class="reveal d3">With hands-on experience teaching AI &amp; ML labs and guiding students through
+                        IT infrastructure, I've developed the ability to <strong>think clearly, communicate effectively,
+                            and deliver quality code</strong> under real-world constraints.</p>
+                    <div class="strengths">
+                        <div class="strength-card reveal d2">
+                            <div class="strength-icon">⚡</div>
+                            <h4>Performance</h4>
+                            <p>Fast, optimized experiences that delight users.</p>
+                        </div>
+                        <div class="strength-card reveal d3">
+                            <div class="strength-icon">🎯</div>
+                            <h4>Clean Code</h4>
+                            <p>Readable, maintainable, well-structured.</p>
+                        </div>
+                        <div class="strength-card reveal d4">
+                            <div class="strength-icon">🎨</div>
+                            <h4>UI Precision</h4>
+                            <p>Pixel-perfect, intentional visual details.</p>
+                        </div>
+                        <div class="strength-card reveal d5">
+                            <div class="strength-icon">🧠</div>
+                            <h4>Problem Solving</h4>
+                            <p>Analytical meets creative solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="section-label reveal">Proficiency</div>
+                    <div class="skill-item reveal d1">
+                        <div class="skill-header"><span class="skill-name">Python</span><span
+                                class="skill-pct">85%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-bar" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal d2">
+                        <div class="skill-header"><span class="skill-name">HTML &amp; CSS</span><span
+                                class="skill-pct">90%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-bar" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal d2">
+                        <div class="skill-header"><span class="skill-name">JavaScript / React JS</span><span
+                                class="skill-pct">75%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-bar" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal d3">
+                        <div class="skill-header"><span class="skill-name">Data Science &amp; ML</span><span
+                                class="skill-pct">70%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-bar" data-width="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal d4">
+                        <div class="skill-header"><span class="skill-name">C / C++</span><span
+                                class="skill-pct">65%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-bar" data-width="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item reveal d4">
+                        <div class="skill-header"><span class="skill-name">IT Infrastructure</span><span
+                                class="skill-pct">80%</span></div>
+                        <div class="skill-track">
+                            <div class="skill-bar" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="tech" id="stack">
+        <div class="tech-bg-text">EXPERTISE</div>
+        <div class="container">
+            <div class="tech-header">
+                <div class="section-label reveal">Tech Stack</div>
+                <h2 class="section-title reveal d1">Tools I Work With</h2>
+                <p class="section-sub reveal d2">A curated set of technologies I use to build modern web apps and
+                    AI-powered systems.</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card reveal d1"><span class="tech-icon">🌐</span>
+                    <h3>HTML5</h3>
+                    <p>Semantic, accessible markup</p><span class="tech-tag">Frontend</span>
+                </div>
+                <div class="tech-card reveal d1"><span class="tech-icon">🎨</span>
+                    <h3>CSS3</h3>
+                    <p>Animations, layouts, responsive</p><span class="tech-tag">Styling</span>
+                </div>
+                <div class="tech-card reveal d2"><span class="tech-icon">⚡</span>
+                    <h3>JavaScript</h3>
+                    <p>Dynamic, interactive UIs</p><span class="tech-tag">Frontend</span>
+                </div>
+                <div class="tech-card reveal d2"><span class="tech-icon">⚛️</span>
+                    <h3>React JS</h3>
+                    <p>Component-driven architecture</p><span class="tech-tag">Framework</span>
+                </div>
+                <div class="tech-card reveal d3"><span class="tech-icon">🐍</span>
+                    <h3>Python</h3>
+                    <p>Scripting, ML, automation</p><span class="tech-tag">Backend</span>
+                </div>
+                <div class="tech-card reveal d3"><span class="tech-icon">🤖</span>
+                    <h3>AI / ML</h3>
+                    <p>scikit-learn, TensorFlow</p><span class="tech-tag">Intelligence</span>
+                </div>
+                <div class="tech-card reveal d4"><span class="tech-icon">📊</span>
+                    <h3>Data Science</h3>
+                    <p>Pandas, NumPy, Matplotlib</p><span class="tech-tag">Analytics</span>
+                </div>
+                <div class="tech-card reveal d4"><span class="tech-icon">🖥️</span>
+                    <h3>Infrastructure</h3>
+                    <p>Windows, networking, monitoring</p><span class="tech-tag">Systems</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="projects-header">
+                <div>
+                    <div class="section-label reveal">Featured Work</div>
+                    <h2 class="section-title reveal d1">Projects That Matter</h2>
+                </div>
+                <p class="section-sub reveal d2">Real solutions built with purpose and precision.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal d1">
+                    <div class="project-preview"
+                        style="background:linear-gradient(135deg,#EDE9FE,#FFF8E1);overflow:hidden;padding:0">
+                        <img src="3541414_8ec9_5.webp" alt="AI & ML Prediction Model"
+                            style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-number">Project 01</div>
+                        <h3>AI &amp; ML Prediction Model</h3>
+                        <p>A machine learning system for data analysis and predictions using classification and
+                            regression algorithms on real-world datasets.</p>
+                        <div class="project-tags"><span class="project-tag">Python</span><span
+                                class="project-tag">scikit-learn</span><span class="project-tag">TensorFlow</span><span
+                                class="project-tag">Pandas</span></div>
+                        <div class="project-actions">
+                            <a href="https://github.com/muthuselvi67" target="_blank" rel="noopener noreferrer"
+                                class="btn-proj-ghost">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal d2">
+                    <div class="project-preview"
+                        style="background:linear-gradient(135deg,#F3E8FF,#EDE9FE);overflow:hidden;padding:0">
+                        <img src="images.jpg" alt="Python Analytics Dashboard"
+                            style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-number">Project 02</div>
+                        <h3>Python Analytics Dashboard</h3>
+                        <p>An interactive data visualization pipeline performing EDA, trend analysis, and statistical
+                            summaries on complex datasets.</p>
+                        <div class="project-tags"><span class="project-tag">Python</span><span
+                                class="project-tag">Pandas</span><span class="project-tag">NumPy</span><span
+                                class="project-tag">Matplotlib</span></div>
+                        <div class="project-actions"><a href="https://github.com/muthuselvi67" target="_blank"
+                                rel="noopener noreferrer" class="btn-proj-ghost">GitHub</a></div>
+                    </div>
+                </div>
+                <div class="project-card reveal d3">
+                    <div class="project-preview"
+                        style="background:linear-gradient(135deg,#FFF8E1,#F3E8FF);overflow:hidden;padding:0">
+                        <img src="unnamed.jpg" alt="Responsive Web Application"
+                            style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;" />
+                    </div>
+                    <div class="project-body">
+                        <div class="project-number">Project 03</div>
+                        <h3>Responsive Web Application</h3>
+                        <p>A fully responsive, user-focused website built with semantic HTML, modern CSS, and JavaScript
+                            for a seamless experience.</p>
+                        <div class="project-tags"><span class="project-tag">HTML5</span><span
+                                class="project-tag">CSS3</span><span class="project-tag">JavaScript</span><span
+                                class="project-tag">Bootstrap</span></div>
+                        <div class="project-actions"><a href="https://github.com/muthuselvi67" target="_blank"
+                                rel="noopener noreferrer" class="btn-proj-ghost">GitHub</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <!-- Royal Banner Header -->
+        <div class="contact-banner">
+            <div class="contact-banner-orb cob-1"></div>
+            <div class="contact-banner-orb cob-2"></div>
+            <div class="contact-banner-label">Get In Touch</div>
+            <h2>Let's Build<br /><em>Something Great</em></h2>
+            <p>I'm actively looking for new opportunities. Whether you have a project, want to collaborate, or just say
+                hi — my inbox is always open.</p>
+        </div>
+
+        <!-- 3 Info Cards floating over banner bottom -->
+        <div class="contact-info-row">
+            <a href="mailto:muthuselvi.s2910@gmail.com" class="contact-info-card reveal">
+                <div class="contact-info-icon">📧</div>
+                <h4>Email</h4>
+                <p>muthuselvi.s2910<br />@gmail.com</p>
+            </a>
+            <a href="tel:6380993878" class="contact-info-card reveal d1">
+                <div class="contact-info-icon">📱</div>
+                <h4>Phone</h4>
+                <p>+91 6380993878</p>
+            </a>
+            <a href="https://github.com/muthuselvi67" target="_blank" rel="noopener noreferrer"
+                class="contact-info-card reveal d2">
+                <div class="contact-info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                        fill="currentColor">
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                    </svg>
+                </div>
+                <h4>GitHub</h4>
+                <p>muthuselvi67</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/muthuselvi-s-120644348/" target="_blank" rel="noopener noreferrer"
+                class="contact-info-card reveal d2">
+                <div class="contact-info-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="#0A66C2">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </div>
+                <h4>LinkedIn</h4>
+                <p>muthuselvi-s-120644348</p>
+            </a>
+        </div>
+
+        <!-- Centered Form Card -->
+        <div class="contact-form-wrap">
+            <div class="contact-form-card reveal">
+                <div class="contact-form-title">Send a Message</div>
+                <div class="contact-form-sub">Fill in the form and I'll get back to you within 24 hours.</div>
+                <div class="contact-form-divider">
+                    <div class="contact-form-divider-line"></div>
+                    <div class="contact-form-divider-icon">✦</div>
+                    <div class="contact-form-divider-line"></div>
+                </div>
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group"><label>Your Name</label><input type="text" name="from_name"
+                                placeholder="Jane Smith" required /></div>
+                        <div class="form-group"><label>Email Address</label><input type="email" name="from_email"
+                                placeholder="jane@company.com" required /></div>
+                    </div>
+                    <div class="form-group"><label>Subject</label><input type="text" name="subject"
+                            placeholder="Job Opportunity / Collaboration" /></div>
+                    <div class="form-group"><label>Message</label><textarea name="message"
+                            placeholder="Tell me about your project or opportunity..." required></textarea></div>
+                    <button type="submit" class="form-submit" id="submitBtn">✦ &nbsp;Send Message &nbsp;→</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 <span>Muthuselvi S</span>. Crafted with care.</p>
+        <div class="footer-socials">
+            <a href="https://github.com/muthuselvi67" target="_blank" rel="noopener noreferrer"
+                class="footer-social-link" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/muthuselvi-s-120644348/" target="_blank" rel="noopener noreferrer"
+                class="footer-social-link" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+            </a>
+        </div>
+        <a href="#home" class="back-top">Back to top ↑
+
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
